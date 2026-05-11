@@ -1,0 +1,64 @@
+<!-- POPUP 1: Welcome -->
+<div class="kl-overlay active" id="kl-welcome-overlay">
+  <div class="kl-box">
+    <button class="kl-close" onclick="closeWelcome()">×</button>
+
+    <div id="kl-welcome-form">
+      <h2>👋 Welcome!</h2>
+      <p>Stay in the loop — enter your details below.</p>
+      <input type="email" id="kl-email-1" placeholder="Your email address" />
+      <span class="kl-error" id="kl-err-1"></span>
+      <input type="tel"   id="kl-phone-1" placeholder="Phone number (e.g. +923001234567)" />
+      <button class="kl-btn" id="kl-btn-welcome" onclick="submitWelcome()">Subscribe</button>
+    </div>
+
+    <div id="kl-welcome-thanks" class="kl-thanks" style="display:none">
+      <h2>🎉 Thank you!</h2>
+      <p>You're all signed up. We'll be in touch soon!</p>
+      <button class="kl-btn" onclick="closeWelcome()" style="margin-top:20px">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- DROPDOWN BAR: Children question -->
+<!-- POPUP: Children question -->
+<div class="kl-overlay" id="kl-children-bar">
+  <div class="kl-box" style="text-align:center;">
+    <button class="kl-close" onclick="closeBar()">×</button>
+    <h2>👶 Quick Question</h2>
+    <p>Do you have children? We'd love to send birthday surprises for your little ones!</p>
+    <select id="kl-children-answer" onchange="handleChildrenAnswer(this.value)"
+      style="width:100%; padding:11px 14px; border:1px solid #ddd; border-radius:8px;
+             font-size:15px; cursor:pointer; background:#fff; outline:none;
+             appearance:none; -webkit-appearance:none;">
+      <option value="">— Please select —</option>
+      <option value="no">No, I don't have children</option>
+      <option value="1">Yes — 1 child</option>
+      <option value="2">Yes — 2 children</option>
+      <option value="3">Yes — 3 children</option>
+      <option value="4">Yes — 4 children</option>
+    </select>
+  </div>
+</div>
+
+<!-- POPUP 2: Children birthdays -->
+<div class="kl-overlay" id="kl-birthday-overlay">
+  <div class="kl-box">
+    <button class="kl-close" onclick="closeBirthdayPopup()">×</button>
+
+    <div id="kl-birthday-form">
+      <h2>🎂 Children's Birthdays</h2>
+      <p>We'll send special birthday surprises for your little ones!</p>
+      <input type="email" id="kl-email-2" placeholder="Confirm your email address" />
+      <span class="kl-error" id="kl-err-2"></span>
+      <div id="kl-birthday-fields"></div>
+      <button class="kl-btn" id="kl-btn-bday" onclick="submitBirthdays()">Save Birthday Details</button>
+    </div>
+
+    <div id="kl-birthday-thanks" class="kl-thanks" style="display:none">
+      <h2>🥳 All Saved!</h2>
+      <p>We'll remember their birthdays — stay tuned for surprises!</p>
+      <button class="kl-btn" onclick="closeBirthdayPopup()" style="margin-top:20px">Done</button>
+    </div>
+  </div>
+</div>
