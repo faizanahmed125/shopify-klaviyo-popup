@@ -1,6 +1,7 @@
 # shopify-klaviyo-popup
 Created home page popup forms to take user's email and phone number and after that another pop up to take their child's birthday details and adding all the form data into separately organized klaviyo lists.
 
+Live Store Link: https://sillygoosekids.ca/?srsltid=AfmBOoqSZuG-WuRgqEtsYKlw5ZkxxrfflQIqPLvp8RjU4XZUJ5o3x57b
 
 <img width="1514" height="817" alt="image" src="https://github.com/user-attachments/assets/b28a3958-c0d1-4879-8e81-8b477e711349" />
 
